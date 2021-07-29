@@ -1,5 +1,4 @@
 import { Link } from "gatsby"
-import { DiScala } from "react-icons/Di"
 import styled from "styled-components"
 
 export const FooterContainer = styled.div`

@@ -5,21 +5,21 @@ import styled from "styled-components"
 export const Nav = styled.nav`
   background: ${({ active }) =>
     active
-      ? "#fff"
+      ? "#313537"
       : "linear-gradient (to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 100% )"};
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: sticky;
+
   top: 0;
   z-index: 999;
-  background-color: #43e685;
 
   @media screen and (max-width: 960px) {
-    background: ${({ click }) => (click ? "#fff" : "transparent")};
+    background: "#313537";
     transition: 0.8s all ease;
+    position: sticky;
   }
 `
 
@@ -32,7 +32,7 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogo = styled(Link)`
-  color: #141414;
+  color: #fff;
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -72,7 +72,7 @@ export const NavMenu = styled.ul`
     top: ${({ click }) => (click ? "100%" : "-1000px")};
     opacity: 1;
     tansition: all 0.2s ease;
-    background: #fff;
+    background: #313537;
   }
 `
 export const NavItem = styled.li`
@@ -83,7 +83,7 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(Link)`
-  color: #141414;
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;

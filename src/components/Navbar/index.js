@@ -5,7 +5,6 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
-  NavIcon,
   MobileIcon,
   NavMenu,
   NavLinks,
@@ -35,7 +34,7 @@ const Navbar = () => {
           <NavbarContainer>
             <NavLogo to="/">AKSI Technologies</NavLogo>
             <MobileIcon onClick={handleClick}>
-              {click ? <FaTimes /> : <FaBars />}
+              {click ? <FaTimes color="white" /> : <FaBars color="white" />}
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
